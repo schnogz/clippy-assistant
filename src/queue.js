@@ -1,14 +1,9 @@
-/******
- * Tiny Queue
- *
- * @constructor
- */
-clippy.Queue = function (onEmptyCallback) {
+let Queue = function (onEmptyCallback) {
   this._queue = [];
   this._onEmptyCallback = onEmptyCallback;
 };
 
-clippy.Queue.prototype = {
+Queue.prototype = {
   /***
    *
    * @param {function(Function)} func
@@ -45,3 +40,5 @@ clippy.Queue.prototype = {
     this._queue = [];
   },
 };
+
+export default Queue;

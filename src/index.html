@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clippy Assistant</title>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link rel="stylesheet" type="text/css" href="./clippy.css" media="all">
-  <script src="./agent.js"></script>
-  <script src="./animator.js"></script>
-  <script src="./balloon.js"></script>
-  <script src="./load.js"></script>
-  <script src="./queue.js"></script>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clippy Assistant</title>
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.9/system-production.js"></script>
+   <link rel="stylesheet" type="text/css" href="./clippy.css" media="all">
+   <script src="../es2015/index.js"></script>
  </head>
  <body>
-  <script type="text/javascript">
-   clippy.load('Clippy', function(agent){
-    agent.show();
-    agent.animate();
-    agent.speak('When all else fails, bind some paper together. My name is Clippy.');
-   });
-  </script>
  </body>
 </html>

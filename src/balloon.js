@@ -1,16 +1,11 @@
-/******
- *
- *
- * @constructor
- */
-clippy.Balloon = function (targetEl) {
+let Balloon = function (targetEl) {
   this._targetEl = targetEl;
 
   this._hidden = true;
   this._setup();
 };
 
-clippy.Balloon.prototype = {
+Balloon.prototype = {
   WORD_SPEAK_TIME:200,
   CLOSE_BALLOON_DELAY:2000,
 
@@ -246,3 +241,4 @@ clippy.Balloon.prototype = {
   }
 };
 
+export default Balloon;

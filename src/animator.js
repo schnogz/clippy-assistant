@@ -1,9 +1,4 @@
-/******
- *
- *
- * @constructor
- */
-clippy.Animator = function (el, path, data, sounds, options) {
+let Animator = function (el, path, data, sounds, options) {
   this._el = el;
   this._data = data;
   this._path = path;
@@ -30,7 +25,7 @@ clippy.Animator = function (el, path, data, sounds, options) {
   }
 };
 
-clippy.Animator.prototype = {
+Animator.prototype = {
   _setupElement:function (el) {
     var frameSize = this._data.framesize;
     el[0].style.display = 'none';
@@ -191,4 +186,9 @@ clippy.Animator.prototype = {
   }
 };
 
-clippy.Animator.States = { WAITING:1, EXITED:0 };
+Animator.States = {
+  WAITING:1,
+  EXITED:0
+};
+
+export default Animator;
