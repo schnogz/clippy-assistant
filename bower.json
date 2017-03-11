@@ -1,0 +1,23 @@
+{
+  "name": "clippy-assistant",
+  "version": "0.1.0",
+  "homepage": "https://github.com/schnogz/clippy-assistant.git",
+  "license": "MIT",
+  "authors": [
+    "Andrew Schneider <andrew.mark.schneider@gmail.com> (http://schnogz.com/)",
+    "Smore.com"
+  ],
+  "description": "A jQuery free version of everyones favorite office assistant Clippy.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "clippy",
+    "office",
+    "microsoft"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ]
+}
